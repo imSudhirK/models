@@ -67,8 +67,8 @@ const Navigation = () => {
                         <Link className="nav-item nav-link active" to='/divisions'>
                             <i><MdContacts size={20} /></i>Contacts
                         </Link>
-                        <Link className="nav-item nav-link active" to='/testing'>
-                            <i><MdContacts size={20} /></i>testing
+                        <Link className="nav-item nav-link active" to='/workspace'>
+                            <i><MdContacts size={20} /></i>workspace
                         </Link>
 
                         <a href="index.html" className="nav-item nav-link active">

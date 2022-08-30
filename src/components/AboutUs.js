@@ -1,5 +1,5 @@
 import React from "react";
-import Testimonials from "./Testimonials";
+import Testimonials from "./testimonials/Testimonials";
 
 
 const AboutUs = () => {
