@@ -18,3 +18,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### commands
 
 npm install bootstrap
+npm install react-icons
+npm install react-router-dom
+npm install redux 
+npm install react-redux 
+npm install redux-logger
+npm i swiper
