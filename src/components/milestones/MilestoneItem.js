@@ -3,7 +3,7 @@ import blog5 from '../../assests/blog/blog-5.jpg';
 
 const MilestoneItem = () => {
     return (
-        <div className="col-xl-4 col-md-6">
+        <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="post-item position-relative h-100">
 
                 <div className="post-img position-relative overflow-hidden">

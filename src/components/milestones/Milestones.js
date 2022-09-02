@@ -10,6 +10,12 @@ const Milestones = () => {
     const Open = useSelector(state => state.rh_sidebar.isOpened);
     return (
         <div className={`milestones ${Open}`}>
+
+            <div className="header">
+                <h2>Milestones</h2>
+                <p>Quam sed id excepturi </p>
+            </div>
+
             <div className="row gy-4 posts-list">
 
                 {/* <!-- Begin post list item --> */}

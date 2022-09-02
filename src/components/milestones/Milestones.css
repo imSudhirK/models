@@ -76,7 +76,7 @@
 
 .milestones .milestones-pagination li.active,
 .milestones .milestones-pagination li:hover {
-    background: var(--color-primary);
+    background: var(--primary);
     color: #fff;
 }
 
@@ -88,7 +88,7 @@
 
 
 .milestones {
-    padding: 100px;
+    padding: 20px 40px 0 40px;
     margin-left: 250px;
     transition: 0.5s;
 }
@@ -107,6 +107,7 @@
 
 @media (max-width: 991.98px) {
     .milestones {
+        padding: 10px 20px 0 20px;
         width: 100%;
         margin-left: 0;
     }

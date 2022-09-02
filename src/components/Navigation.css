@@ -78,6 +78,7 @@
     margin-left: 250px;
     background: var(--dark);
     transition: 0.5s;
+    position: sticky;
 }
 
 .nav-content .navbar {
@@ -132,12 +133,12 @@
 @media (max-width: 991.98px) {
     .sidebar {
         margin-left: -250px;
-        margin-top: 60px;
+        padding-top: 60px;
     }
 
     .sidebar.open {
         margin-left: 0;
-        margin-top: 60px;
+        padding-top: 60px;
     }
 
     .nav-content {
