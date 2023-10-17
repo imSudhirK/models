@@ -4,6 +4,7 @@
   "description": "\"database models\"",
   "main": "dist/index.js",
   "scripts": {
+    "build": "rm -rf dist && tsc",
     "lint:fix": "prettier --write \"**/*.ts\" --tab-width 4"
   },
   "repository": {
