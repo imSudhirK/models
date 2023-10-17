@@ -1,0 +1,19 @@
+import { Schema } from "mongoose";
+
+export interface Notes {
+    userId: string;
+    title?: string;
+    description?: string;
+    tag?: string;
+    createdAt: Date;
+}
+
+const NotesSchema = new Schema<Notes>({
+    userId: { type: String, required: true },
+    title: { type: String, required: false },
+    description: { type: String, required: false },
+    tag: { type: String, required: false },
+    createdAt: { type: Date, default: Date.now(), required: true },
+});
+
+NotesSchema.index({ userId: 1 });
