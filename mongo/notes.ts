@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 
 export interface Notes {
     userId: string;
@@ -17,3 +17,5 @@ const NotesSchema = new Schema<Notes>({
 });
 
 NotesSchema.index({ userId: 1 });
+
+export default model<Notes>("notes", NotesSchema);
