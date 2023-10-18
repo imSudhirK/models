@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 
 export interface Notes {
-    userId: string;
+    email: string;
     title?: string;
     description?: string;
     tag?: string;
@@ -9,7 +9,7 @@ export interface Notes {
 }
 
 const NotesSchema = new Schema<Notes>({
-    userId: { type: String, required: true },
+    email: { type: String, required: true },
     title: { type: String, required: false },
     description: { type: String, required: false },
     tag: { type: String, required: false },
