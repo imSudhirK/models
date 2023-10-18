@@ -4,7 +4,7 @@ export interface User {
     name: string;
     email: string;
     password: string;
-    createdAt: Date;
+    createdAt?: Date;
 }
 
 const UserSchema = new Schema<User>({

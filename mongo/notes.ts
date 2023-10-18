@@ -5,7 +5,7 @@ export interface Notes {
     title?: string;
     description?: string;
     tag?: string;
-    createdAt: Date;
+    createdAt?: Date;
 }
 
 const NotesSchema = new Schema<Notes>({
