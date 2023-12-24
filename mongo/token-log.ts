@@ -9,7 +9,7 @@ export interface TokenLog {
     refreshTokenExpiresAt: Date;
     status?: boolean;
     updatedAt?: Date;
-    userId?: number;
+    userId?: string;
     deviceName?: string;
     deviceIP?: string;
 }
@@ -23,7 +23,7 @@ export const TokenSchema = new Schema<TokenLog>({
     refreshTokenExpiresAt: { type: Date, required: true },
     status: { type: Boolean, required: true, default: true },
     updatedAt: { type: Date, default: Date.now(), required: true },
-    userId: { type: Number, required: false },
+    userId: { type: String, required: false },
     deviceName: { type: String, required: false },
     deviceIP: { type: String, required: false },
 });
