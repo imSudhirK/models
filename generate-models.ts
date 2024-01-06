@@ -1,6 +1,13 @@
 import SequelizeAuto from "sequelize-auto";
 import { config } from "dotenv";
-config();
+import path from "path";
+
+const isWindows = process.platform == "win32";
+const envBasePath = module.path.split(
+    `${isWindows ? "\\" : "/"}node_modules`,
+)[0];
+const envPath = path.join(envBasePath, ".env");
+config({ path: envPath });
 
 const auto = new SequelizeAuto(
     process.env.DB_NAME as string,
